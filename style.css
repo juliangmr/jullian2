@@ -1,0 +1,114 @@
+*{
+    font-family: 'Lato', 'sans-serif';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.partesup{
+    text-align: center;
+    
+    font-size: 20px;
+    
+}
+.partesup h1{
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+
+
+body{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background: rgb(25,43,17);
+background: linear-gradient(90deg, rgba(25,43,17,1) 22%, rgba(22,203,100,1) 100%, rgba(255,0,0,1) 100%, rgba(11,7,9,1) 100%);
+}
+.container{
+    max-width: 900px;
+    margin:60px auto;
+}
+
+.container h1{
+    font-size: 4em;
+}
+.container p{
+    font-size: 2em;
+}
+.center-abs{
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+}
+.charts{
+    display: flex;
+}
+.chart{
+    position: relative;
+    width:25%;
+    height: 260px;
+}
+.chart h3{
+    color:#fff;
+    font-size: 1.8em;
+    position: absolute;
+    bottom:10px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 10px #000;
+}
+.chart svg{
+    z-index: 2;
+}
+/* DIV CIRCULO DE FONDO */
+.circle{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    z-index:1;
+    border:10px #baeaff solid;
+}
+.text{
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    font-size: 3.8em;
+    font-weight: 700;
+    color:#0096da
+}
+/* SVG CIRCULO */
+.outer{
+    fill:transparent;
+    stroke: #0096da;
+    stroke-width: 10; /* grosor del borde */
+    stroke-dasharray: 439; /* numero de relleno del borde, se usa el mismo valor en el script.js */
+    transform: rotate(270deg) translate(-150px, 0); 
+    /* giramos el circulo para que su apertura sea en la parte superior 
+    y ajustamos su posicion
+    */
+}
+.pagina2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around; 
+}
+.contadores{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.form-group :hover{
+    color: chocolate;
+}
+.form-group input{
+    border-radius: 20px;
+    height: 27px;
+    width: 150px;
+}

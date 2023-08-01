@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown timer</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="partesup"><h1>Contador deportivo</h1></div>
+    <section class="container">
+        
+        
+        <div class="charts">
+            <div class="chart">
+                <!-- un circulo inicial de fondo -->
+                <div class="circle center-abs"></div>
+                <!-- area para SVG -->
+                <svg class="center-abs" width="150" height="150">
+                    <!-- un segundo circulo en SVG con su ubicacion en coordenadas x,y y el radio de expansion -->
+                    <circle class="outer" cx="75" cy="75" r="70" />
+                </svg>
+                <!-- etiqueta para el contador, en este caso el dia -->
+                <span class="text center-abs" id="days"></span>
+                <h3>Días</h3>
+            </div>
+            <div class="chart">
+                <div class="circle center-abs"></div>
+                <svg class="center-abs" width="150" height="150">
+                    <circle class="outer" cx="75" cy="75" r="70" />
+                </svg>
+                <span class="text center-abs" id="hours"></span>
+                <h3>Horas</h3>
+            </div>
+            <div class="chart">
+                <div class="circle center-abs"></div>
+                <svg class="center-abs" width="150" height="150">
+                    <circle class="outer" cx="75" cy="75" r="70" />
+                </svg>
+                <span class="text center-abs" id="minutes"></span>
+                <h3>Minutos</h3>
+            </div>
+            <div class="chart">
+                <div class="circle center-abs"></div>
+                <svg class="center-abs" width="150" height="150">
+                    <circle class="outer" cx="75" cy="75" r="70" />
+                </svg>
+                <span class="text center-abs" id="seconds"></span>
+                <h3>Seconds</h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="pagina2">
+    <div class="contadores">
+        <div class="contador">
+            <div class="form-group text-white">
+                <label for="clicks">Tiempo</label>
+                <input type="text" value="0" class="form-control" id="clicks" name="clicks" minlength="1" maxlength="3000" required><br>
+                <div class="sumar" id="bote" onClick="clickM1()" ;>+</div>
+                <div class="restar" id="boty" onClick="clickME1();">-</div>
+            </div>
+        </div>  
+
+        <div class="faltas">
+            <div class="form-group text-white">
+                <label for="clicks2">Faltas</label>
+                <input type="text" value="0" class="form-control" id="clicks2" name="clicks2" minlength="1" maxlength="3000" required><br>
+                <div class="sumar" id="bote2" onClick="clickM2()" ;>+</div>
+                <div class="restar" id="boty" onClick="clickME2();">-</div>
+            </div>
+        </div>
+
+        <div class="anotaciones">
+            <div class="form-group text-white">
+                <label for="clicks3">Anotaciones</label>
+                <input type="text" value="0" class="form-control" id="clicks3" name="clicks3" minlength="1" maxlength="3000" required><br>
+                <div class="sumar" id="bote3" onClick="clickM3()" ;>+</div>
+                <div class="restar" id="boty" onClick="clickME3();">-</div> 
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    
+    <script src="java.js"></script> 
+</body>
+</html>
